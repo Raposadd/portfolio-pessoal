@@ -1,0 +1,122 @@
+* {
+  padding: 0px;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-bottom: 1px solid black;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+
+  gap: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.icone {
+  font-weight: bold;
+}
+
+/* Agora a introdução que fica abaixo da nav */
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  text-align: center;
+  padding: 4rem 0rem;
+}
+.intro h1 {
+  font-size: xx-large;
+}
+.intro h2 {
+  color: grey;
+  margin: 0px;
+}
+.intro p {
+  max-width: 40ch;
+}
+
+/* Agora o conteúdo principal que fica no meio da página e é o mais informativo */
+
+.principal {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.projetos, .experiencias, .educacao {
+  flex: 1;
+  border: 1px solid black;
+  min-width: 32ch;
+}
+.principal h1, p{
+  margin: 1em;
+}
+
+/* Aqui será exclusivamente sobre os blocos */
+
+.acordeao {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+.acordeao a{
+  text-decoration: none;
+  border-top: 1px solid black;
+  padding: 0.5rem;
+  color: black;
+}
+
+.real{
+  border-bottom: 1px solid;
+}
+
+.educacao div {
+  padding-left: 3rem;
+}
+.review h1 {
+  margin: 1rem;
+}
+.conteiner-de-cartao {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+.cartao {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+  flex: 1;
+  min-width: 15ch;
+}
+
+@media (max-width: 80ch){
+  nav{
+    flex-direction: column;
+  }
+  .principal h1, p, a{
+    text-align: center;
+  }
+  .educacao div{
+    display: flex;
+    justify-content: center;
+  }
+}
